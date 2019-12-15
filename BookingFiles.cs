@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
 using System.IO;
 
 namespace ConsoleApp1
@@ -33,9 +34,24 @@ namespace ConsoleApp1
 
         }
 
-        public void Seats()
+        public int Seats(int num1, int num2)
         {
 
+            BookingFilms Seats = new BookingFilms();
+
+            if (num1 == 1)
+            {
+
+            }
+            else if (num1 == 2)
+            {
+
+            }
+            else
+            {
+                Seats.Films();
+            }
+            return num1;
         }
     }
 }
