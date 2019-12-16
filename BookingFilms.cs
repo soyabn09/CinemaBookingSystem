@@ -42,7 +42,6 @@ namespace ConsoleApp1
             {
                 // FILM CHOICE AVENGERS
                 Console.WriteLine();
-                Console.WriteLine("Not Implemented");
                 Seats.Seats("Avengers: Endgame", "3h 2m", "PG", "12:30 13/12/19", "1");
                 Thread.Sleep(2000);
             }
@@ -50,7 +49,6 @@ namespace ConsoleApp1
             {
                 // FILM CHOICE JOKER
                 Console.WriteLine();
-                Console.WriteLine("Not Implemented");
                 Seats.Seats("Joker", "2h 2m", "R", "16:30 13/12/19", "2");
                 Thread.Sleep(2000);
             }
@@ -58,7 +56,6 @@ namespace ConsoleApp1
             {
                 // FILM CHOICE TOY STORY 4
                 Console.WriteLine();
-                Console.WriteLine("Not Implemented");
                 Seats.Seats("Toy Story 4", "1h 40m", "U", "18:30 13/12/19", "3");
                 Thread.Sleep(2000);
             }
@@ -85,7 +82,6 @@ namespace ConsoleApp1
             {
                 // FILM CHOICE AVENGERS
                 Console.WriteLine();
-                Console.WriteLine("Not Implemented");
                 Seats.Standard(Title, Length, AR, DT, Screen);
                 Thread.Sleep(2000);
             }
@@ -93,7 +89,6 @@ namespace ConsoleApp1
             {
                 // FILM CHOICE JOKER
                 Console.WriteLine();
-                Console.WriteLine("Not Implemented");
                 Seats.VIP(Title, Length, AR, DT, Screen);
                 Thread.Sleep(2000);
             }
