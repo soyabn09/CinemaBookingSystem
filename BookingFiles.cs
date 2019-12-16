@@ -34,24 +34,25 @@ namespace ConsoleApp1
 
         }
 
-        public int Seats(int num1, int num2)
+        public void Seats(int num1, int num2)
         {
 
-            BookingFilms Seats = new BookingFilms();
+            string[] Seats = File.ReadAllLines(@"C:\CinemaBookingSystem\Seats.txt");
 
             if (num1 == 1)
             {
-
+                Console.WriteLine(Seats[1]);
             }
             else if (num1 == 2)
             {
+                Console.WriteLine(Seats[2]);
 
             }
-            else
+            else if (num1 == 3)
             {
-                Seats.Films();
+                Console.WriteLine(Seats[3]);
+
             }
-            return num1;
         }
     }
 }

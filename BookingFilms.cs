@@ -43,7 +43,7 @@ namespace ConsoleApp1
                 // FILM CHOICE AVENGERS
                 Console.WriteLine();
                 Console.WriteLine("Not Implemented");
-                Seats.Seats("Avengers: Endgame", "", "", "", "");
+                Seats.Seats("Avengers: Endgame", "3h 2m", "PG", "12:30 13/12/19", "1");
                 Thread.Sleep(2000);
             }
             else if (choice == 2)
@@ -51,7 +51,7 @@ namespace ConsoleApp1
                 // FILM CHOICE JOKER
                 Console.WriteLine();
                 Console.WriteLine("Not Implemented");
-                Seats.Seats("Joker", "", "", "", "");
+                Seats.Seats("Joker", "2h 2m", "R", "16:30 13/12/19", "2");
                 Thread.Sleep(2000);
             }
             else if (choice == 3)
@@ -59,7 +59,7 @@ namespace ConsoleApp1
                 // FILM CHOICE TOY STORY 4
                 Console.WriteLine();
                 Console.WriteLine("Not Implemented");
-                Seats.Seats("Avengers: Endgame", "", "", "", "");
+                Seats.Seats("Toy Story 4", "1h 40m", "U", "18:30 13/12/19", "3");
                 Thread.Sleep(2000);
             }
             else
@@ -69,12 +69,10 @@ namespace ConsoleApp1
             }
         }
 
-        public void Seats(string title, string length, string AR, string DT, string Screen)
+        public void Seats(string Title, string Length, string AR, string DT, string Screen)
         {
 
-            StandardSeats Standard = new StandardSeats();
-
-            VIPSeats VIP = new VIPSeats();
+            BookingSeats Seats = new BookingSeats();
 
             Console.WriteLine();
             Console.WriteLine("Please choose one of the following choice of seats:");
@@ -88,7 +86,7 @@ namespace ConsoleApp1
                 // FILM CHOICE AVENGERS
                 Console.WriteLine();
                 Console.WriteLine("Not Implemented");
-                Standard.Standard("Avengers: Endgame", "", "", "", "", 1);
+                Seats.Standard(Title, Length, AR, DT, Screen);
                 Thread.Sleep(2000);
             }
             else if (choice == 2)
@@ -96,7 +94,7 @@ namespace ConsoleApp1
                 // FILM CHOICE JOKER
                 Console.WriteLine();
                 Console.WriteLine("Not Implemented");
-                VIP.VIP("Avengers: Endgame", "", "", "", "", 2);
+                Seats.VIP(Title, Length, AR, DT, Screen);
                 Thread.Sleep(2000);
             }
             else

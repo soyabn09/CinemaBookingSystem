@@ -6,7 +6,7 @@ using System.IO;
 
 namespace ConsoleApp1
 {
-    class Ticket
+    class BookingTickets
     {
         // Shows the final ticket
         public void FinalTicket(string title, string length, string AR, string DT, string Screen, string Seats, string Price)
