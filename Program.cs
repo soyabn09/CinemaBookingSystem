@@ -47,6 +47,7 @@ namespace ConsoleApp1
                 // HELP
                 Console.WriteLine();
                 Console.WriteLine("Not Implemented");
+                Help();
                 Thread.Sleep(2000);
             }
             else
@@ -57,6 +58,47 @@ namespace ConsoleApp1
                 Thread.Sleep(2000);
             }
 
+        }
+
+        static void Help()
+        {
+
+            Console.Clear();
+            Console.WriteLine();
+            Console.WriteLine("==================================================");
+            Console.WriteLine();
+            Console.Write("Films: \n\nBLAH BLAH BLAH");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("==================================================");
+            Console.WriteLine();
+            Console.Write("Type of Seats: \n\nBLAH BLAH BLAH");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("==================================================");
+            Console.WriteLine();
+            Console.Write("Ticket: \n\nBLAH BLAH BLAH");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("==================================================");
+            Console.WriteLine();
+            Console.WriteLine("Please choose the following option:");
+            Console.WriteLine();
+            Console.WriteLine("[1] BACK");
+            int user = int.Parse(Console.ReadLine());
+
+            if (user == 1)
+            {
+                // BACK TO MENU
+                Thread.Sleep(1000);
+            }
+            else
+            {
+                // BACK TO OPTIONS
+                Console.WriteLine();
+                Thread.Sleep(2000);
+                Help();
+            }
         }
 
     }
