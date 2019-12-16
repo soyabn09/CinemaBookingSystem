@@ -42,6 +42,12 @@ namespace ConsoleApp1
             if (num1 == 1)
             {
                 Console.WriteLine(Seats[1]);
+
+                int[] SeatNum = Array.ConvertAll(Seats, int.Parse);
+
+                int result = Subtract(num2);
+
+                Console.WriteLine(result);
             }
             else if (num1 == 2)
             {
@@ -53,6 +59,16 @@ namespace ConsoleApp1
                 Console.WriteLine(Seats[3]);
 
             }
+        }
+
+        public int Subtract(int num1)
+        {
+
+            string[] Seats = File.ReadAllLines(@"C:\CinemaBookingSystem\Seats.txt");
+
+            int[] SeatNum = Array.ConvertAll(Seats, int.Parse);
+
+            return SeatNum[1] - num1;
         }
     }
 }
